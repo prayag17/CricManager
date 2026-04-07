@@ -3,13 +3,21 @@ public class Player extends Person implements Scorable {
     int runs;
     double average;
     double strikeRate;
+    int wickets;
+    double economyRate;
+    int oversBowled;
+    int teamId;
 
-    public Player(int id, String name, int score, int runs, double average, double strikeRate) {
+    public Player(int id, String name, int score, int runs, double average, double strikeRate, int wickets, double economyRate, int oversBowled, int teamId) {
         super(id, name);
         this.score = score;
         this.runs = runs;
         this.average = average;
         this.strikeRate = strikeRate;
+        this.wickets = wickets;
+        this.economyRate = economyRate;
+        this.oversBowled = oversBowled;
+        this.teamId = teamId;
     }
 
     public Player() {

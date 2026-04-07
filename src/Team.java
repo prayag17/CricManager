@@ -3,9 +3,9 @@ public class Team implements Scorable {
     String teamName;
     Player[] players;
     int captainIndex;
-    static int totalRuns;
-    static int totalWickets;
-    static int totalMatches;
+    int totalRuns;
+    int totalWickets;
+    int totalMatches;
 
     public Team(int teamId, String teamName, Player[] players, int captainIndex) {
         this.teamId = teamId;
